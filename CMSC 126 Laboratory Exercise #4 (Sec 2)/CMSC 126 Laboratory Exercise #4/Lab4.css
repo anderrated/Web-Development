@@ -4,21 +4,152 @@ Your task is to edit this CSS file and design the different web pages. You are N
 Be creative with your designs. Points will be given based on originality, creativity and overall amazingness.
 */
 
-body{
-    background-image: url(CSS_Imgs/bgcoffee.jpeg);
+/* 
+Color Palette:
+#183348 - Dark Blue
+#36546c - Jeans
+#dcab83 - Creamy
+#b77a4d - mustard
+#7a2e20 - maroon
+#34211b - brown
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+@font-face {
+    font-family: 'tanAegean';
+    src:url(tanAegean.ttf);
 }
 
-header{
+@font-face {
+    font-family: 'archivo';
+    src:url(archivo.ttf);
+}
+
+body {
+    background-color: #ebe6de;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    height: 500px;
+    position: relative;
+    background-image: url("CSS_Imgs/coffee_bg.jpeg");
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+h1 {
+    font-family: tanAegean;
+    color: #fff0f0;
+    font-size: 300%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    transform: translateX(-50%);
+}
+
+hr {
+    border: 0;
+    background-image: url("CSS_Imgs/coffee_bgheader.jpeg");
+}
+
+#welcome {
+    position: absolute;
+    width: 100%;
+    font-family: archivo;
+    color: #b77a4d;
+    text-align: center;
+    z-index: 2;  
+    top: 280px;
+    display: block;
+}
+
+div.navBar {
+    position: absolute;
+    width: 310px;
+    height: 40px;
+    background: #183348;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+    z-index: 1;
+    top: 25px;
+    right: 25px;
+}
+
+div.navBar a {
+    font-size: 15px;
+    text-transform: uppercase;
     color: white;
+    text-decoration: none;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
     text-align: center;
+    width: 99px;
+    border-radius: 10px;
 }
 
-p{
+a:link {
+    background-color: #183348;
+}
+
+a:visited {
+    background-color: #36546c;
+}
+
+a:hover {
+    background-color: #b77a4d;
+}
+
+a:active {
+    background-color: #34211b;
+}
+
+#banner {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+a[href="#bottomPage"] {
+    text-decoration: None;
+    display: inline-block;
     color: antiquewhite;
-    text-align: center;
+    background-color: #36546c;
+    border-radius: 25px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-right: 10px;;
+    font-size: 10px;
+    float: right;
 }
 
-#navBar{
-    background-color: bisque;
-    text-align: left;
+a[href="#bottomPage"]:hover {
+    background-color: #34211b; 
+  }
+
+.coffee > h2 {
+    color: #ffffff;
+    position: absolute;
+    font-family: tanAegean;
+    text-shadow: 2px 2px #183348;
+    background-color: #183348;
+    padding: 20px;
+    font-size: 400%;
+    width: 50%;
+    margin-left: 20px;
+    z-index: 2;
+    top: 600px;
+    display: block;
+    
 }
+

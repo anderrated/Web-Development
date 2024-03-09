@@ -14,7 +14,6 @@ Color Palette:
 #34211b - brown
  */
 
-
  * {
     margin: 0;
     padding: 0;
@@ -39,7 +38,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -179,7 +178,7 @@ div.coffee > ol {
     width: 700px;
     margin-top: 250px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 div.coffee ol li {
@@ -314,27 +313,32 @@ div.coffee h2:nth-child(2) {
     
 }
 
-.coffeeTitle {
+table tr:nth-child(1) td.coffeeTitle{
     font-family: tanAegean;
     font-size: 60px;
-    text-align: center;
-    padding-left: 20px;
-    color: #ebe6de;
+    text-align: left;
+    padding-left: 30px;
+    color: #b77a4d;
+}
+
+table tr:nth-child(4) td.coffeeTitle{
+    font-family: tanAegean;
+    font-size: 60px;
+    text-align: right;
+    padding-right: 30px;
+    color: #b77a4d;
 }
 
 table {
     border-collapse: collapse;
-    border: none;
     width: 100%;
     position: relative;
     text-align: center;
-    background-image: url("CSS_Imgs/bluejeans.jpg");
-    border-spacing:0px;
   }
   
-.coffeeImg {
-    width: 160px;
-    height: 160px;
+img.coffeeImg {
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     margin: 10px;
     border-radius: 100px;
@@ -344,7 +348,7 @@ table {
     vertical-align: bottom;
   }
   
-table td.label {
+table tr:nth-child(3) .label {
     font-family: archivo;
     font-size: 14px;
     text-align: center;
@@ -354,23 +358,52 @@ table td.label {
     color: #b77a4d;
     object-fit: cover;
     vertical-align: top;
+    background-image: url("CSS_Imgs/bluejeans.jpg");
   }
 
-table tr:nth-child(2) {
+table tr:nth-child(6) .label {
+    font-family: archivo;
+    font-size: 14px;
+    text-align: center;
     width: 50px;
+    height: 60px;
+    padding-bottom: 30px;
+    color: #b77a4d;
+    object-fit: cover;
+    vertical-align: top;
+    background-image: url("CSS_Imgs/bluejeans.jpg");
+}
+
+table tr:nth-child(2) td:nth-child(7) {
+    border-top-right-radius: 100px;
+}
+
+table tr:nth-child(3) td.label:nth-child(7) {
+    border-bottom-right-radius: 150px;
+}
+
+table tr:nth-child(5) td:nth-child(1) {
+    border-top-left-radius: 100px;
+}
+
+table tr:nth-child(6) td.label:nth-child(1) {
+    border-bottom-left-radius: 150px;
+}
+
+table tr:nth-child(2) {
     object-fit: cover;
     text-align: end;
     height: 250px;
     vertical-align: bottom;
+    background-image: url("CSS_Imgs/bluejeans.jpg");
 }
 
 table tr:nth-child(5) {
-    background-image: url("CSS_Imgs/bluejeans.jpg");
-    width: 50px;
     object-fit: cover;
     text-align: end;
     height: 250px;
     vertical-align: bottom;
+    background-image: url("CSS_Imgs/bluejeans.jpg");
 }
 
 form {
@@ -545,7 +578,6 @@ table:nth-child(2){
     background-image: url("CSS_Imgs/bluejeans.jpg");
     border-collapse: collapse;
     width: 90%;
-    right: 10px;
     text-align: center;
     margin-top: 700px;
     border-top-right-radius: 50px;
@@ -569,6 +601,7 @@ table:nth-child(2) tr:nth-child(1) {
     text-align: center;
     height: 275px;
     vertical-align: bottom;
+    padding: 20px;
 }
 
 table:nth-child(2) tr:nth-child(2) {
@@ -576,11 +609,20 @@ table:nth-child(2) tr:nth-child(2) {
     text-align: center;
     height: 15px;
     vertical-align: bottom;
+    background-image: url("CSS_Imgs/bluejeans.jpg");
 }
 
 .coffee table:nth-child(2) td.label {
     padding-top: 20px;
     color: #ebe6de;
+    height: 80px;
+    vertical-align: top;
+    text-align: center;
+    padding: 20px;
+}
+
+.coffee table:nth-child(2) td.label:nth-child(6){
+    border-bottom-right-radius: 50px;
 }
 
 footer {

@@ -14,7 +14,6 @@ Color Palette:
 #34211b - brown
  */
 
-
  * {
     margin: 0;
     padding: 0;
@@ -39,7 +38,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -329,7 +328,6 @@ table {
     position: relative;
     text-align: center;
     background-image: url("CSS_Imgs/bluejeans.jpg");
-    border-spacing:0px;
   }
   
 .coffeeImg {
@@ -542,7 +540,7 @@ ul {
 
 
 table:nth-child(2){
-    background-image: url("CSS_Imgs/bluejeans.jpg");
+    background-image: url("CSS_Imgs/coffee_bg.jpeg");
     border-collapse: collapse;
     width: 90%;
     right: 10px;
